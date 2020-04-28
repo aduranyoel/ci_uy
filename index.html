@@ -22,26 +22,41 @@
             padding: 32px;
             height: 85px;
             width: 200px;
-            margin: 20px auto;
+            margin: 20px;
         }
         label {
             margin-top: 10px;
             display: block;
         }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+        }
     </style>
 </head>
 <body>
-    <div>
-        <button id="actionRandom">Random CI UY</button>
-        <label id="resultCi"></label>
-    </div>
-    <div>
-        <label for="digitCi">Test CI</label>
-        <input type="number" id="digitCi">
-        <label id="resultValid"></label>
-    </div>
-
-    
+    <section>
+        <!-- CI -->
+        <div>
+            <button id="actionRandom">Random CI UY</button>
+            <label id="resultCi"></label>
+        </div>
+        <div>
+            <label for="digitCi">Test CI</label>
+            <input type="number" id="digitCi">
+            <label id="resultValid"></label>
+        </div>
+        <!-- RUT -->
+        <div>
+            <button id="actionRandomRut">Random RUT UY</button>
+            <label id="resultRut"></label>
+        </div>
+        <div>
+            <label for="digitRut">Test RUT</label>
+            <input type="number" id="digitRut">
+            <label id="resultValidRut"></label>
+        </div>
+    </section>
     <script src="main.js"></script>
 </body>
 </html>
